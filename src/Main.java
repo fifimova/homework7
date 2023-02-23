@@ -48,10 +48,10 @@ task9();
         int birthRate1 = total1/1000 * 17;
         int mortalityRate1 = total1/1000 *  8;
         int year1 = 0;
-        while (year1 <= 10){
-            System.out.println("Год " + year1 + ", численность населения составляет " + total1);
+        while (year1 < 10){
             year1 = year1 + 1;
             total1 = total1 + (birthRate1 - mortalityRate1);
+            System.out.println("Год " + year1 + ", численность населения составляет " + total1);
         }
     }
     public static void task4() {
